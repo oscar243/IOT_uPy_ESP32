@@ -1,0 +1,7 @@
+pip install adafruit-ampy
+
+ampy --port COM6 get boot.py boot.py
+
+ampy --port COM6 --baud 115200 put boot.py
+
+ampy --port COM6 run --no-output test.py

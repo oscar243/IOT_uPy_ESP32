@@ -1,0 +1,44 @@
+AWS
+iot core
+
+-windows
+-python
+
+certificado_py
+
+-download connection kit
+
+.pem .key policy start
+
+ejecutar kit de conexión
+
+./start
+
+-Se verifica si envia mensajes (desde consola) --
+
+-Los certificados no son validos en upy
+
+-Cambiar formato usando openssl
+
+openssl x509 -in ECI.cert.pem -out cert.der -outform DER
+openssl rsa -in ECI.private.key -out key.der -outform DER
+
+private:=private
+public:=ca
+
+ampy -port COM6 mkdir flash
+ampy --port COM6 ls
+ampy -port COM6 put archivos.der flash/
+
+ampy -port COM6 put ESCUELA.cer.pem.der flash/cer
+ampy -port COM6 put ESCUELA.private.key.der flash/key
+
+__
+Code
+
+Conexion, MQTT, Publicación
+
+
+
+
+
